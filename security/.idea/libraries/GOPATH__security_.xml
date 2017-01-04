@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;security&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../algTest" />
+      <root url="file://$PROJECT_DIR$/../Test" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../crypto-master" />
+      <root url="file://$PROJECT_DIR$/../myTest" />
+      <root url="file://$PROJECT_DIR$/../fabric-other-project" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../gerrit-fabric-simple-pbft" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../algTest" />
+      <root url="file://$PROJECT_DIR$/../Test" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../crypto-master" />
+      <root url="file://$PROJECT_DIR$/../myTest" />
+      <root url="file://$PROJECT_DIR$/../fabric-other-project" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../gerrit-fabric-simple-pbft" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

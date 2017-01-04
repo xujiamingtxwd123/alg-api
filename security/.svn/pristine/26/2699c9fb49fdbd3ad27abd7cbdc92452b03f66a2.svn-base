@@ -1,0 +1,7 @@
+package mac
+
+type MacType int16
+
+const(
+	MACTYPE_HMAC MacType = iota
+)

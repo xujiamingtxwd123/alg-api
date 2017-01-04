@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;security&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../security 2" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../security 2" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

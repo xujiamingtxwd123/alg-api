@@ -1,0 +1,97 @@
+package crypto
+
+
+//import "crypto/rsa"
+
+type KeyType int16
+const(
+	KEYTYPE_ECDSA_PUBLIC KeyType = iota
+	KEYTYPE_ECDSA_PRIVATE
+	KEYTYPE_RSA_PUBLIC
+	KEYTYPE_RSA_PRIVATE
+	KEYTYPE_ED25519_PUBLIC
+	KEYTYPE_ED25519_PRIVATE
+	KEYTYPE_DES
+	KEYTYPE_TRIPLE_DES
+	KEYTYPE_RC4
+	KEYTYPE_AES
+	KEYTYPE_MAC
+
+
+
+)
+
+type KeyPairType int16
+const (
+	KEYPAIRTYPE_RSA KeyPairType = iota
+	KEYPAIRTYPE_ECDSA
+	KEYPAIRTYPE_ED25519
+)
+type KeyLength int16
+const(
+	KEYLENGTH_ECDSA_P224 KeyLength = iota
+	KEYLENGTH_ECDSA_P256
+	KEYLENGTH_ECDSA_P384
+	KEYLENGTH_ECDSA_P521
+	KEYLENGTH_ED25519
+)
+
+
+//type symmkey struct {
+//	key []byte
+//	kt KeyType
+//}
+//func (rk *symmkey)SetKey(key []byte) error{
+//	rk.key = key
+//	return nil
+//}
+//
+//func (rk *symmkey)GetKey() ([]byte,error){
+//	return rk.key,nil
+//}
+//
+//func (rk *symmkey)GetType() KeyType{
+//	return rk.kt
+//}
+//
+//func BuildKey(keyType KeyType)(Key,error){
+//	return &symmkey{kt:keyType},nil
+//}
+
+
+
+type SymmKey interface {
+	Key
+	SetKey(key []byte) error
+	GetKey()([]byte,error)
+}
+
+type Key interface {
+	GetType() KeyType
+
+}
+
+type PublicKey interface {
+	Key
+	//SetPublicKey(PublicKey)
+	//GetPublicKey()(PublicKey)
+	ExportKey()([]byte,error)
+	ImportKey(key []byte) error
+}
+
+type PrivateKey interface {
+	Key
+	//SetPrivateKey(PrivateKey)
+	//GetPrivateKey()(PrivateKey)
+	ExportKey()([]byte,error)
+	ImportKey(key []byte) error
+}
+
+type KeyPair interface{
+	GetPublic() (Key)
+	GetPrivate() (Key)
+}
+
+
+
+
